@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>learn math </title>
+    <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- شريط التنقل -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-square-root-alt"></i>
+                <h1>عالم الرياضيات</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="#branches"><i class="fas fa-sitemap"></i> فروع الرياضيات</a></li>
+                <li><a href="#history"><i class="fas fa-history"></i> تاريخ الرياضيات</a></li>
+                <li><a href="#tools"><i class="fas fa-calculator"></i> أدوات</a></li>
+                <li><a href="#about"><i class="fas fa-info-circle"></i> عن الموقع</a></li>
+            </ul>
+            <button class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </nav>
+
+    <!-- القسم الرئيسي -->
+    <section class="hero" id="home">
+        <div class="container">
+            <div class="hero-content">
+                <h2>الرياضيات: لغة الكون</h2>
+                <p>اكتشف جمال المنطق، الأنماط، والهياكل التي تشكل أساس عالمنا. من أبسط العمليات الحسابية إلى أكثر النظريات تعقيداً.</p>
+                <a href="#branches" class="btn">استكشف الفروع <i class="fas fa-arrow-down"></i></a>
+            </div>
+            <div class="hero-image">
+                <div class="math-symbols">
+                    <span>π</span>
+                    <span>∑</span>
+                    <span>∫</span>
+                    <span>∞</span>
+                    <span>√</span>
+                    <span>θ</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- فروع الرياضيات -->
+    <section class="branches" id="branches">
+        <div class="container">
+            <h2 class="section-title">فروع الرياضيات الرئيسية</h2>
+            <p class="section-subtitle">استكشف المجالات المختلفة للرياضيات وعلاقاتها المتبادلة</p>
+            
+            <div class="branches-grid">
+                <!-- البطاقة 1: الجبر -->
+                <div class="branch-card" data-category="algebra">
+                    <div class="card-icon">
+                        <i class="fas fa-xmark"></i>
+                    </div>
+                    <h3>الجبر</h3>
+                    <p>دراسة الرموز والقواعد لمعالجة تلك الرموز، وهو فرع أساسي في معظم فروع الرياضيات.</p>
+                    <div class="card-details">
+                        <h4>مواضيع رئيسية:</h4>
+                        <ul>
+                            <li>المعادلات الخطية</li>
+                            <li>المعادلات التربيعية</li>
+                            <li>المصفوفات والمحددات</li>
+                            <li>الجبر المجرد</li>
+                        </ul>
+                        <div class="examples">
+                            <strong>مثال:</strong> حل المعادلة 2س + 5 = 13
+                        </div>
+                    </div>
+                    <button class="toggle-details">عرض التفاصيل</button>
+                </div>
+
+                <!-- البطاقة 2: الهندسة -->
+                <div class="branch-card" data-category="geometry">
+                    <div class="card-icon">
+                        <i class="fas fa-shapes"></i>
+                    </div>
+                    <h3>الهندسة</h3>
+                    <p>دراسة الأشكال، الحجم، المواضع النسبية للأشكال، وخصائص الفضاء.</p>
+                    <div class="card-details">
+                        <h4>مواضيع رئيسية:</h4>
+                        <ul>
+                            <li>هندسة إقليدسة</li>
+                            <li>علم المثلثات</li>
+                            <li>الهندسة التحليلية</li>
+                            <li>الهندسة التفاضلية</li>
+                        </ul>
+                        <div class="examples">
+                            <strong>نظرية فيثاغورس:</strong> أ² + ب² = ج²
+                        </div>
+                    </div>
+                    <button class="toggle-details">عرض التفاصيل</button>
+                </div>
+
+                <!-- البطاقة 3: التفاضل والتكامل -->
+                <div class="branch-card" data-category="calculus">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>التفاضل والتكامل</h3>
+                    <p>دراسة التغير والمعدلات، التراكم، والكميات المتناهية في الصغر.</p>
+                    <div class="card-details">
+                        <h4>مواضيع رئيسية:</h4>
+                        <ul>
+                            <li>النهايات والاتصال</li>
+                            <li>المشتقات والتكاملات</li>
+                            <li>المتسلسلات غير المنتهية</li>
+                            <li>المعادلات التفاضلية</li>
+                        </ul>
+                        <div class="examples">
+                            <strong>المشتقة:</strong> د/دس (س²) = 2س
+                        </div>
+                    </div>
+                    <button class="toggle-details">عرض التفاصيل</button>
+                </div>
+
+                <!-- البطاقة 4: الإحصاء والاحتمالات -->
+                <div class="branch-card" data-category="statistics">
+                    <div class="card-icon">
+                        <i class="fas fa-chart-bar"></i>
+                    </div>
+                    <h3>الإحصاء والاحتمالات</h3>
+                    <p>جمع، تحليل، تفسير، وعرض البيانات، ودراسة الأحداث العشوائية.</p>
+                    <div class="card-details">
+                        <h4>مواضيع رئيسية:</h4>
+                        <ul>
+                            <li>الاحتمالات الأساسية</li>
+                            <li>التوزيعات الاحتمالية</li>
+                            <li>الإحصاء الاستدلالي</li>
+                            <li>تحليل الانحدار</li>
+                        </ul>
+                        <div class="examples">
+                            <strong>الاحتمال:</strong> P(طرح عملة) = 0.5
+                        </div>
+                    </div>
+                    <button class="toggle-details">عرض التفاصيل</button>
+                </div>
+
+                <!-- البطاقة 5: نظرية الأعداد -->
+                <div class="branch-card" data-category="number-theory">
+                    <div class="card-icon">
+                        <i class="fas fa-infinity"></i>
+                    </div>
+                    <h3>نظرية الأعداد</h3>
+                    <p>دراسة خصائص الأعداد الصحيحة والأشياء المرتبطة بها.</p>
+                    <div class="card-details">
+                        <h4>مواضيع رئيسية:</h4>
+                        <ul>
+                            <li>الأعداد الأولية</li>
+                            <li>المعادلات الديوفانتية</li>
+                            <li>النظرية التحليلية للأعداد</li>
+                            <li>الأشكال التربيعية</li>
+                        </ul>
+                        <div class="examples">
+                            <strong>الأعداد الأولية:</strong> 2, 3, 5, 7, 11, 13, ...
+                        </div>
+                    </div>
+                    <button class="toggle-details">عرض التفاصيل</button>
+                </div>
+
+                <!-- البطاقة 6: الرياضيات المتقطعة -->
+                <div class="branch-card" data-category="discrete">
+                    <div class="card-icon">
+                        <i class="fas fa-project-diagram"></i>
+                    </div>
+                    <h3>الرياضيات المتقطعة</h3>
+                    <p>دراسة الهياكل الرياضية المنفصلة بدلاً من المستمرة.</p>
+                    <div class="card-details">
+                        <h4>مواضيع رئيسية:</h4>
+                        <ul>
+                            <li>نظرية المجموعات</li>
+                            <li>التركيبات والتوافيق</li>
+                            <li>نظرية المخططات</li>
+                            <li>المنطق الرياضي</li>
+                        </ul>
+                        <div class="examples">
+                            <strong>التوافيق:</strong> C(ن, ك) = ن!/(ك!(ن-ك)!)
+                        </div>
+                    </div>
+                    <button class="toggle-details">عرض التفاصيل</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- آلة حاسبة تفاعلية -->
+    <section class="calculator-section" id="tools">
+        <div class="container">
+            <h2 class="section-title">آلة حاسبة رياضية</h2>
+            <div class="calculator-container">
+                <div class="calculator">
+                    <div class="calculator-display">
+                        <div class="previous-operation"></div>
+                        <div class="current-operation" id="display">0</div>
+                    </div>
+                    <div class="calculator-buttons">
+                        <button class="calc-btn operator" data-action="clear">C</button>
+                        <button class="calc-btn operator" data-action="backspace">⌫</button>
+                        <button class="calc-btn operator" data-action="percentage">%</button>
+                        <button class="calc-btn operator" data-action="divide">÷</button>
+                        
+                        <button class="calc-btn" data-number="7">7</button>
+                        <button class="calc-btn" data-number="8">8</button>
+                        <button class="calc-btn" data-number="9">9</button>
+                        <button class="calc-btn operator" data-action="multiply">×</button>
+                        
+                        <button class="calc-btn" data-number="4">4</button>
+                        <button class="calc-btn" data-number="5">5</button>
+                        <button class="calc-btn" data-number="6">6</button>
+                        <button class="calc-btn operator" data-action="subtract">−</button>
+                        
+                        <button class="calc-btn" data-number="1">1</button>
+                        <button class="calc-btn" data-number="2">2</button>
+                        <button class="calc-btn" data-number="3">3</button>
+                        <button class="calc-btn operator" data-action="add">+</button>
+                        
+                        <button class="calc-btn" data-number="0">0</button>
+                        <button class="calc-btn" data-number=".">.</button>
+                        <button class="calc-btn equals" data-action="equals">=</button>
+                    </div>
+                </div>
+                <div class="calculator-info">
+                    <h3>أدوات رياضية مفيدة</h3>
+                    <ul>
+                        <li><i class="fas fa-calculator"></i> آلة حاسبة علمية متقدمة</li>
+                        <li><i class="fas fa-chart-line"></i> راسم دوال تفاعلي</li>
+                        <li><i class="fas fa-shapes"></i> حاسبة مساحة وحجم الأشكال</li>
+                        <li><i class="fas fa-random"></i> محلل إحصائي للبيانات</li>
+                    </ul>
+                    <button class="btn" id="graph-btn">فتح راسم الدوال <i class="fas fa-external-link-alt"></i></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- قسم تاريخ الرياضيات -->
+    <section class="history" id="history">
+        <div class="container">
+            <h2 class="section-title">تاريخ الرياضيات</h2>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-year">3000 ق.م</div>
+                    <div class="timeline-content">
+                        <h3>الرياضيات المصرية والبابلية</h3>
+                        <p>طور المصريون والبابليون أنظمة عد وهندسة عملية لأغراض التجارة والبناء.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">300 ق.م</div>
+                    <div class="timeline-content">
+                        <h3>إقليدس والعناصر</h3>
+                        <p>إقليدس يؤسس الهندسة الإقليدية في كتابه "العناصر" الذي ظل كتاباً مرجعياً لأكثر من 2000 عام.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">800-1200 م</div>
+                    <div class="timeline-content">
+                        <h3>الرياضيات في العصر الذهبي الإسلامي</h3>
+                        <p>ساهم علماء مثل الخوارزمي (الجبر)، الخيام (حل المعادلات التكعيبية)، وابن الهيثم في تطور الرياضيات.</p>
+                    </div>
+                </div>
+                <div class="timeline-item">
+                    <div class="timeline-year">القرن 17</div>
+                    <div class="timeline-content">
+                        <h3>تطور التفاضل والتكامل</h3>
+                        <p>نيوتن ولايبنتز يطوران بشكل مستقل حساب التفاضل والتكامل.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- تذييل الصفحة -->
+    <footer id="about">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3><i class="fas fa-square-root-alt"></i> عالم الرياضيات</h3>
+                    <p>مصدر تعليمي مجاني يهدف إلى تبسيط الرياضيات وجعلها في متناول الجميع.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>روابط سريعة</h4>
+                    <ul>
+                        <li><a href="#home">الرئيسية</a></li>
+                        <li><a href="#branches">فروع الرياضيات</a></li>
+                        <li><a href="#history">التاريخ</a></li>
+                        <li><a href="#tools">الأدوات</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>اتصل بنا</h4>
+                    <p><i class="fas fa-envelope" > </i> ayoubouali634@gmail.com</p>
+                    <div class="social-icons">
+                        <a href="https://x.com/ayoub_gou"><i class="fab fa-twitter"></i></a>
+                        <a href="https://www.facebook.com/share/16mdZBgzDy/"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                        <a href="https://www.instagram.com/aeuuuob?igsh=Z3RpczJkYnVzdXQ0"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 عالم الرياضيات. جميع الحقوق محفوظة.</p>
+                <p class="math-quote">"الرياضيات هي مفتاح كل العلوم" - روجر بيكون</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="java.js"></script>
+</body>
+</html>
